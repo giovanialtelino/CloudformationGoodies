@@ -17,7 +17,6 @@ C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\ne
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\scopedcss\bundle\CloudformationGoodies.styles.css
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\scopedcss\projectbundle\CloudformationGoodies.bundle.scp.css
 C:\Users\giova\Code\CloudformationGoodies\app\CloudformationGoodies\obj\Debug\net6.0\CloudformationGoodies.dll
