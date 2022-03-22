@@ -1,4 +1,4 @@
-using CloudformationGoodies.Data;
+using CloudformationGoodies.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 

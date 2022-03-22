@@ -1,4 +1,4 @@
-﻿namespace CloudformationGoodies.Data
+﻿namespace CloudformationGoodies.Shared.Service
 {
     public class ValidateTemplateService
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudformationGoodies", "CloudformationGoodies.csproj", "{6A28278B-61A1-4299-A2B4-839F14754540}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudformationGoodies.Blazor", "CloudformationGoodies.Blazor.csproj", "{6A28278B-61A1-4299-A2B4-839F14754540}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1AFE0205-C052-4DD5-9E9B-C0DDCC6E3C19}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,6 +12,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1AFE0205
 		..\..\infra\localstack-docker-compose.yml = ..\..\infra\localstack-docker-compose.yml
 		..\..\infra\yaml-lint.sh = ..\..\infra\yaml-lint.sh
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{DF653DEA-DDA5-4A2C-8DD9-7F168B4E5212}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\LICENSE = ..\..\LICENSE
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudformationGoodies.Shared", "..\CloudformationGoodies.Shared\CloudformationGoodies.Shared.csproj", "{9E8045A6-8866-40FD-A020-4DFA5480459D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudformationGoodies.Api", "..\CloudformationGoodies.Api\CloudformationGoodies.Api.csproj", "{40A954D8-A307-4884-B6E1-E73CBA77E5D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +33,14 @@ Global
 		{6A28278B-61A1-4299-A2B4-839F14754540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A28278B-61A1-4299-A2B4-839F14754540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A28278B-61A1-4299-A2B4-839F14754540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8045A6-8866-40FD-A020-4DFA5480459D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8045A6-8866-40FD-A020-4DFA5480459D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8045A6-8866-40FD-A020-4DFA5480459D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8045A6-8866-40FD-A020-4DFA5480459D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A954D8-A307-4884-B6E1-E73CBA77E5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A954D8-A307-4884-B6E1-E73CBA77E5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A954D8-A307-4884-B6E1-E73CBA77E5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A954D8-A307-4884-B6E1-E73CBA77E5D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
