@@ -4,30 +4,30 @@ namespace CloudformationGoodies.Api.Service
 {
     public interface IStackComponentsService
     {
-        List<StackComponent> GetAll();
-        StackComponent Upsert(StackComponent stack);
-        StackComponent Delete(string guid);
-        String GetCode(string guid);
+        Task<List<StackComponent>> GetAll();
+        Task<StackComponent> Upsert(StackComponent stack);
+        Task<StackComponent> Delete(string guid);
+        Task<String> GetCode(string guid);
     }
 
     public class StackComponentsService : IStackComponentsService
     {
-        public StackComponent Delete(string guid)
+        public async Task<StackComponent> Delete(string guid)
         {
             throw new NotImplementedException();
         }
 
-        public List<StackComponent> GetAll()
+        public async Task<List<StackComponent>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public string GetCode(string guid)
+        public async Task<string> GetCode(string guid)
         {
             throw new NotImplementedException();
         }
 
-        public StackComponent Upsert(StackComponent stack)
+        public async Task<StackComponent> Upsert(StackComponent stack)
         {
             throw new NotImplementedException();
         }

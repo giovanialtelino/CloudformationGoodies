@@ -1,4 +1,5 @@
 using CloudformationGoodies.Api.Context;
+using CloudformationGoodies.Api.Service;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<StackContext>(opts => opts.UseNpgsql());
+builder.Services.AddScoped<IStackService, StackService>();
+builder.Services.AddScoped<IStackComponentsService, StackComponentsService>();
 
 var app = builder.Build();
 
@@ -18,15 +21,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/stack", async (StackContext ctx) =>
+app.MapGet("/stack", async (StackContext ctx, IStackService service) =>
 {
-    return await ctx.Stacks.ToListAsync();
+    return await service.GetAll();
 });
 
 
-app.MapGet("/stack/{stackId}/component", async (StackContext ctx) =>
+app.MapGet("/stack/{stackId}/component", async (StackContext ctx, IStackComponentsService src, string stackId) =>
 {
-    return await ctx.Stacks.ToListAsync();
+    Console.WriteLine(stackId);
+    return await src.GetAll();
 });
 
 app.MapGet("/stack/{stackId}/component/{componentId}/enviroment", async (StackContext ctx) =>
