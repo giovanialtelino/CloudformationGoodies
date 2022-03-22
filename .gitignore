@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/app/CloudformationGoodies/obj/
+/app/CloudformationGoodies.Api/obj/
+/app/CloudformationGoodies.Shared/obj/

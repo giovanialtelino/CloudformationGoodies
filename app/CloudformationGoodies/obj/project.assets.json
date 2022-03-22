@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.csproj",
-      "projectName": "CloudformationGoodies",
-      "projectPath": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.csproj",
+      "projectUniqueName": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.Blazor.csproj",
+      "projectName": "CloudformationGoodies.Blazor",
+      "projectPath": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.Blazor.csproj",
       "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\obj\\",
       "projectStyle": "PackageReference",

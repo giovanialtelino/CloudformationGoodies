@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FrkDPJFRp3AroRf/bycDwe1SFIeaSeGcBWM+mGT+/EeOjERDXyBrqrWOeeg78YHgdnCzXd0o8U4Q5UtF0DlZ8A==",
+  "dgSpecHash": "ojKMZ2YhcvrKFh3P6xJgyzO8nziTwz7Q6y2NEAJbuLIoY/qCdDEgzZuDXsfL6eVG7jOwFzxL9ShLRAa+2TFtCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.csproj",
+  "projectFilePath": "C:\\Users\\giova\\Code\\CloudformationGoodies\\app\\CloudformationGoodies\\CloudformationGoodies.Blazor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
