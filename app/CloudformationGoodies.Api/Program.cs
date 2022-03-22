@@ -1,13 +1,15 @@
+using CloudformationGoodies.Api.Context;
+using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<StackContext>(opts => opts.UseNpgsql());
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -16,28 +18,70 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
+app.MapGet("/stack", async (StackContext ctx) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    return await ctx.Stacks.ToListAsync();
+});
 
-app.MapGet("/weatherforecast", () =>
+
+app.MapGet("/stack/{stackId}/component", async (StackContext ctx) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-       new WeatherForecast
-       (
-           DateTime.Now.AddDays(index),
-           Random.Shared.Next(-20, 55),
-           summaries[Random.Shared.Next(summaries.Length)]
-       ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapGet("/stack/{stackId}/component/{componentId}/enviroment", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapGet("/stack/{stackId}/component/{componentId}/code", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+//upserts only
+
+app.MapPut("/stack", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapPut("/stack/{stackId}/component", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapPut("/stack/{stackId}/component/{componentId}/enviroment", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapPut("/stack/{stackId}/component/{componentId}/code", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+//delete only
+
+app.MapDelete("/stack", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapDelete("/stack/{stackId}/component", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapDelete("/stack/{stackId}/component/{componentId}/enviroment", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
+app.MapDelete("/stack/{stackId}/component/{componentId}/code", async (StackContext ctx) =>
+{
+    return await ctx.Stacks.ToListAsync();
+});
+
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

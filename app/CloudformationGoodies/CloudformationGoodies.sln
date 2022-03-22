@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1AFE0205
 	ProjectSection(SolutionItems) = preProject
 		..\..\infra\basic-infra.sh = ..\..\infra\basic-infra.sh
 		..\..\infra\cfn-lint.sh = ..\..\infra\cfn-lint.sh
+		docker-compose.yml = docker-compose.yml
 		..\..\infra\localstack-docker-compose.yml = ..\..\infra\localstack-docker-compose.yml
 		..\..\infra\yaml-lint.sh = ..\..\infra\yaml-lint.sh
 	EndProjectSection
